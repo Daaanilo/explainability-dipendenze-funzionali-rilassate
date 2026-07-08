@@ -7,23 +7,23 @@
 </p>
 
 <h1 align="center">🔍 DEAL</h1>
+
 <h3 align="center">Dependencies Explanation with Advanced Language Models</h3>
 
 <p align="center">
-  <strong>Interactive Web Platform for Dependency Analysis powered by LLMs</strong><br>
-  <em>Piattaforma Web per l'Analisi delle Dipendenze con LLM</em>
+  <strong>Interactive Web Platform for Dependency Analysis powered by LLMs</strong>
 </p>
 
 <p align="center">
-  <a href="#-project-description-english">🇬🇧 English</a> •
-  <a href="#-descrizione-del-progetto-italiano">🇮🇹 Italiano</a> •
-  <a href="#-key-features--caratteristiche-principali">✨ Features</a> •
-  <a href="#-platform-structure--struttura-della-piattaforma">🏗️ Structure</a>
+  <a href="#-project-description">📖 Project Description</a> •
+  <a href="#-key-features">✨ Features</a> •
+  <a href="#-platform-structure">🏗️ Structure</a> •
+  <a href="#-technology-stack">⚙️ Technology</a>
 </p>
 
 ---
 
-## 👨‍💻 Team Members / Componenti del Team
+# 👨‍💻 Team Members
 
 <table align="center">
   <tr>
@@ -40,127 +40,163 @@
 
 ---
 
-## 📖 Project Description (English)
+# 📖 Project Description
 
-**DEAL** is an interactive web platform designed for managing discovery results and their related statistics, supported by **Large Language Models** (LLM).
+**DEAL (Dependencies Explanation with Advanced Language Models)** is an interactive web platform designed for managing dependency discovery results and related statistics, supported by **Large Language Models (LLMs)**.
 
-### 🎯 Main Goal
+The platform aims to simplify dependency analysis inside datasets by providing detailed information about uploaded files, algorithms, and discovered relationships.
 
-Simplify the analysis of dependencies within datasets and provide detailed information about each uploaded file, including dependency analysis results.
+---
 
-### 🏗️ Architecture
+# 🎯 Main Goal
+
+The main objective of DEAL is to provide an intuitive environment where users can:
+
+- Upload and manage analysis files
+- Explore dataset information
+- Understand dependency discovery results
+- Interact with AI-powered explanations
+- Dynamically customize analysis instructions through prompt engineering
+
+---
+
+# 🏗️ Platform Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        DEAL Platform                             │
+│                        DEAL Platform                            │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
+│                                                                 │
 │  ┌──────────────────────────────────────────────────────────┐   │
-│  │                    📁 FILE MANAGEMENT                     │   │
-│  │  Upload • View • Search • Delete • Pin • Move             │   │
+│  │                    📁 FILE MANAGEMENT                    │   │
+│  │  Upload • View • Search • Delete • Pin • Move            │   │
 │  └──────────────────────────┬───────────────────────────────┘   │
-│                             │                                    │
-│                             ▼                                    │
+│                             │                                   │
+│                             ▼                                   │
 │  ┌──────────────────────────────────────────────────────────┐   │
-│  │                    📄 FILE DETAILS                        │   │
-│  │                                                           │   │
-│  │  ┌─────────┐    ┌─────────┐    ┌─────────────────┐       │   │
-│  │  │ Dataset │    │Algorithm│    │   Dependencies  │       │   │
-│  │  │  Info   │    │ Details │    │    Analysis     │       │   │
-│  │  └─────────┘    └─────────┘    └─────────────────┘       │   │
-│  │                                                           │   │
-│  │              21 Interactive Cards in 3 Sections           │   │
+│  │                    📄 FILE DETAILS                       │   │
+│  │                                                          │   │
+│  │  ┌─────────┐    ┌─────────┐    ┌─────────────────┐      │   │
+│  │  │ Dataset │    │Algorithm│    │   Dependencies  │      │   │
+│  │  │  Info   │    │ Details │    │    Analysis     │      │   │
+│  │  └─────────┘    └─────────┘    └─────────────────┘      │   │
+│  │                                                          │   │
+│  │             21 Interactive Cards in 3 Sections           │   │
 │  └──────────────────────────┬───────────────────────────────┘   │
-│                             │                                    │
-│                             ▼                                    │
+│                             │                                   │
+│                             ▼                                   │
 │  ┌──────────────────────────────────────────────────────────┐   │
-│  │                    🤖 LLM Integration                     │   │
-│  │         Dynamic Instructions • Prompt Engineering         │   │
+│  │                    🤖 LLM Integration                    │   │
+│  │        Dynamic Instructions • Prompt Engineering          │   │
 │  └──────────────────────────────────────────────────────────┘   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 📑 Two Main Pages
+---
+
+# 📑 Main Pages
 
 | Page | Description |
 |------|-------------|
-| 🗂️ **File Management** | Upload, view, search, delete, pin, and move files |
-| 📄 **File Details** | Detailed view with 21 cards grouped into 3 sections |
+| 🗂️ **File Management** | Upload, view, search, delete, pin, and organize files |
+| 📄 **File Details** | Detailed visualization with 21 interactive cards divided into 3 sections |
 
-### 🎯 Project Goals
+---
 
-- [x] Create an interactive web platform for file and dependency management
-- [x] Provide detailed view of files with datasets, algorithms, and dependencies
-- [x] Implement filtering system with real-time modifiable instructions
+# 🎯 Project Goals
+
+- [x] Create an interactive web platform for dependency management
+- [x] Provide detailed analysis of datasets, algorithms, and dependencies
+- [x] Implement a real-time filtering system
 - [x] Integrate LLMs for dynamic instruction generation
+- [x] Improve dependency understanding through AI-powered explanations
 
 ---
 
-## 📖 Descrizione del Progetto (Italiano)
+# ✨ Key Features
 
-**DEAL** è una piattaforma web interattiva progettata per gestire i risultati di discovery e le statistiche correlate, supportata da **Large Language Models** (LLM).
-
-### 🎯 Obiettivo Principale
-
-Semplificare l'analisi delle dipendenze nei dataset e fornire informazioni dettagliate su ogni file caricato, inclusi i risultati di analisi delle dipendenze.
-
-### 📑 Le Due Pagine Principali
-
-| Pagina | Descrizione |
-|--------|-------------|
-| 🗂️ **Gestione File** | Carica, visualizza, cerca, elimina, appunta e sposta i file |
-| 📄 **Dettagli File** | Visualizza informazioni dettagliate con 21 card in 3 sezioni |
-
-### 🎯 Obiettivi del Progetto
-
-- [x] Creare una piattaforma web interattiva per la gestione dei file e delle dipendenze
-- [x] Offrire visualizzazione dettagliata con dataset, algoritmi e dipendenze
-- [x] Implementare sistema di filtri con istruzioni modificabili in tempo reale
-- [x] Integrare LLM per generazione dinamica delle istruzioni
+| Feature | Description |
+|---------|-------------|
+| 🗂️ **File Management** | Complete file organization system with upload, search, deletion, pinning, and movement capabilities |
+| 📄 **File Details** | Detailed file analysis through 21 interactive cards |
+| 📊 **Dataset Analysis** | Visualization of dataset information and main characteristics |
+| 🔬 **Algorithm Analysis** | Detailed information about dependency discovery algorithms |
+| 📈 **Dependency Analysis** | Interactive dependency results with filtering capabilities |
+| 📝 **Dynamic Instructions** | Real-time prompt engineering and AI instruction customization |
 
 ---
 
-## ✨ Key Features / Caratteristiche Principali
-
-| Feature | Description 🇬🇧 | Descrizione 🇮🇹 |
-|---------|-----------------|-----------------|
-| 🗂️ **File Management** | Upload, view, search, delete, pin, and move files | Carica, visualizza, cerca, elimina, appunta e sposta i file |
-| 📄 **File Details** | 21 cards in 3 sections with detailed information | 21 card suddivise in 3 sezioni con informazioni dettagliate |
-| 📊 **Dataset** | Dataset information and key characteristics | Informazioni sui dataset e caratteristiche principali |
-| 🔬 **Algorithm** | Algorithm details for dependency discovery | Dettagli dell'algoritmo per la discovery delle dipendenze |
-| 📈 **Dependency Analysis** | Filterable results through specific cards | Risultati filtrabili tramite card specifiche |
-| 📝 **Dynamic Instructions** | Real-time prompt engineering and tuning | Prompt engineering e prompt tuning in tempo reale |
-
----
-
-## 🔬 Technology Stack
+# 🔬 Technology Stack
 
 | Layer | Technology |
 |-------|------------|
-| 🖥️ **Frontend** | React / Modern Web Framework |
-| 🤖 **AI/LLM** | Large Language Models Integration |
-| 📊 **Data** | Dependency Discovery & Analysis |
-| 🔄 **Real-time** | Dynamic Prompt Engineering |
+| 🖥️ **Frontend** | React and modern web technologies |
+| 🤖 **Artificial Intelligence** | Large Language Models integration |
+| 📊 **Data Processing** | Dependency discovery and statistical analysis |
+| 🔄 **Interaction Layer** | Dynamic prompt engineering and real-time customization |
 
 ---
 
-## 📊 File Details Structure / Struttura Dettagli File
+# 🏗️ Platform Structure
 
-The details page presents **21 cards** organized into **3 sections**:
+The application is divided into two main areas:
+
+## 🗂️ File Management
+
+Provides complete control over uploaded files:
+
+- Upload new files
+- Browse existing files
+- Search through available resources
+- Delete unnecessary files
+- Pin important files
+- Organize files efficiently
+
+---
+
+## 📄 File Details
+
+The details page provides a complete overview of each analyzed file through **21 interactive cards** organized into three main sections:
 
 | Section | Content |
 |---------|---------|
-| 📊 **Dataset** | Information about the analyzed dataset |
-| 🔬 **Algorithm** | Details on the discovery algorithm used |
-| 📈 **Dependencies** | Analysis results with interactive filters |
+| 📊 **Dataset** | Dataset information, statistics, and characteristics |
+| 🔬 **Algorithm** | Details about the dependency discovery algorithm |
+| 📈 **Dependencies** | Dependency analysis results and interactive filtering tools |
 
 ---
 
-## 📜 License / Licenza
+# 🤖 LLM Integration
+
+DEAL integrates Large Language Models to improve the interpretation of dependency analysis.
+
+The AI component enables:
+
+- Automated explanation generation
+- Dynamic instruction creation
+- Prompt customization
+- Natural language interaction with analysis results
+
+---
+
+# 📊 Research Focus
+
+This project explores the integration between:
+
+- Data dependency discovery
+- Interactive visualization
+- Artificial intelligence
+- Large Language Models
+- Human-centered data analysis
+
+The goal is to make complex dependency analysis more accessible and understandable through AI-assisted explanations.
+
+---
+
+# 📜 License
 
 This project was developed as part of the **Bachelor's Thesis in Computer Science** by Danilo Gisolfi and Vincenzo Maiellaro.
-
-Questo progetto è stato sviluppato come parte della **Tesi Triennale in Informatica** di Danilo Gisolfi e Vincenzo Maiellaro.
 
 ---
 
@@ -170,5 +206,5 @@ Questo progetto è stato sviluppato come parte della **Tesi Triennale in Informa
 </p>
 
 <p align="center">
-  <a href="#-deal">⬆️ Back to Top / Torna su</a>
+  <a href="#-deal">⬆️ Back to Top</a>
 </p>
